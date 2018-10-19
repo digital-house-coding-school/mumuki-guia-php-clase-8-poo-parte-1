@@ -1,3 +1,16 @@
+$repToy = false;
+$repNemo = false;
+
+function repToy() {
+  global $repToy;
+  $repToy = true;
+}
+
+function repNemo() {
+  global $repNemo;
+  $repNemo = true;
+}
+
 class Pelicula {
   public $id;
   public $titulo;
@@ -5,13 +18,11 @@ class Pelicula {
   public $fechaDeEstreno;
   
   public function reproducir() {
-    global $repToy;
     if ($this->titulo == "Toy Story") {
-      $repToy = true;
-      var_dump($repToy);
+      repToy();
     }
     if ($this->titulo == "Buscando a Nemo") {
-      $repNemo = true;
+      repNemo();
     }
   }
 }
