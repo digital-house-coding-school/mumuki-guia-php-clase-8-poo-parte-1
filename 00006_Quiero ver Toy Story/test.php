@@ -17,3 +17,12 @@ public function testBuscandoANemo() : void {
   
   $this->assertTrue($buscandoANemo->titulo == "Buscando a Nemo", "El titulo de Buscando a Nemo esta incorrecto");
 }
+
+public function testReproduccion() : void {
+  global $repToy;
+  global $repNemo;
+  
+  $this->assertTrue($repToy, "Parecería que no se reprodujo Toy Story...");
+  
+  $this->assertTrue($repNemo, "Ey! No quería ver Buscando a Nemo!");
+}
