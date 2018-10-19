@@ -6,3 +6,9 @@ expectations:
   inspection: DeclaresAttribute:id
 - binding: "*"
   inspection: Except:HasTooShortIdentifiers
+- binding: Pelicula
+  inspection: DeclaresAttribute:titulo
+- binding: Pelicula
+  inspection: DeclaresAttribute:rating
+- binding: Pelicula
+  inspection: DeclaresAttribute:fecha_de_estreno
