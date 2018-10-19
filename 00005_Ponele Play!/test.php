@@ -38,6 +38,6 @@ public function testReproducir() : void {
   $this->assertTrue(method_exists('Pelicula','reproducir'), "La clase película no tiene un método reproducir");
   
   $miPeli = new Pelicula();
-  $resul = $pelicula->reproducir();
+  $resul = $miPeli->reproducir();
   $this->assertTrue($resul == "Reproduciendo", "El método reproducir no retorna la palabra 'Reproduciendo'");
 }
