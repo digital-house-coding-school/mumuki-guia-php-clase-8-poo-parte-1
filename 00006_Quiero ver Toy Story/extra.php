@@ -1,6 +1,3 @@
-$repToy = false;
-$repNemo = false;
-
 class Pelicula {
   public $id;
   public $titulo;
