@@ -6,4 +6,4 @@ Es hora de describir a la película a traves de sus **atributos**. Dado esto, te
 
 > 3. rating
 
-> 4. fecha_de_estreno
+> 4. fechaDeEstreno

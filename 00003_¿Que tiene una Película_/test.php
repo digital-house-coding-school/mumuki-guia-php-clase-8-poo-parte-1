@@ -29,7 +29,7 @@ public function testFecha(): void {
   $peli = new Pelicula();
   $props = get_object_vars($peli);
   
-  $this->assertTrue(property_exists('Pelicula', 'fecha_de_estreno'), "Falta la propiedad fecha_de_estreno");
+  $this->assertTrue(property_exists('Pelicula', 'fechaDeEstreno'), "Falta la propiedad fechaDeEstreno");
   
-  $this->assertTrue(array_key_exists("fecha_de_estreno", $props), "La fecha_de_estreno debe ser pública");
+  $this->assertTrue(array_key_exists("fechaDeEstreno", $props), "La fechaDeEstreno debe ser pública");
 }

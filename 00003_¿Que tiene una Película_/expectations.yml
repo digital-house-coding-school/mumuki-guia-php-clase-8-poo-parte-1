@@ -11,4 +11,6 @@ expectations:
 - binding: Pelicula
   inspection: DeclaresAttribute:rating
 - binding: Pelicula
-  inspection: DeclaresAttribute:fecha_de_estreno
+  inspection: DeclaresAttribute:fechaDeEstreno
+- binding: "*"
+  inspection: Except:DiscardsExceptions
