@@ -22,6 +22,7 @@ public function testReproduccion() : void {
   global $repToy;
   global $repNemo;
   
+  var_dump($repToy);
   $this->assertTrue($repToy, "Parecería que no se reprodujo Toy Story...");
   
   $this->assertTrue($repNemo, "Ey! No quería ver Buscando a Nemo!");
