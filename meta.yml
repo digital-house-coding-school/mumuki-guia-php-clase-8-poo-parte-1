@@ -3,7 +3,8 @@ name: 'Clase 8: POO Parte 1'
 locale: es
 type: learning
 beta: false
-teacher_info: 
+teacher_info: ''
 language: php
 id_format: "%05d"
-order: []
+order:
+- 1
