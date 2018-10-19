@@ -12,6 +12,7 @@ class Pelicula {
     global $repNemo;
     if ($this->titulo == "Toy Story") {
       $repToy = true;
+      var_dump($repToy);exit;
     }
     if ($this->titulo == "Buscando a Nemo") {
       $repNemo = false;
