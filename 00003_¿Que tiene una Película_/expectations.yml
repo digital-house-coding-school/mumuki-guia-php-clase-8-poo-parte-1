@@ -4,3 +4,5 @@ expectations:
   inspection: DeclaresClass:Pelicula
 - binding: Pelicula
   inspection: DeclaresAttribute:id
+- binding: "*"
+  inspection: Except:HasTooShortIdentifiers
