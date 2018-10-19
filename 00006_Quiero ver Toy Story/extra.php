@@ -15,7 +15,7 @@ class Pelicula {
       var_dump($repToy);
     }
     if ($this->titulo == "Buscando a Nemo") {
-      $repNemo = false;
+      $repNemo = true;
     }
   }
 }
