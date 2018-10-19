@@ -10,6 +10,7 @@ class Pelicula {
   public function reproducir() {
     global $repToy;
     global $repNemo;
+    var_dump($this->titulo);exit;
     if ($this->titulo == "Toy Story") {
       $repToy = true;
     }
