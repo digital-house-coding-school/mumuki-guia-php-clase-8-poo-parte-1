@@ -4,6 +4,7 @@ $repNemo = false;
 function repToy() {
   global $repToy;
   $repToy = true;
+  var_dump($repToy);
 }
 
 function repNemo() {
