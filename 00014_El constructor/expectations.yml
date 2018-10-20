@@ -2,3 +2,5 @@
 expectations:
 - binding: "*"
   inspection: Except:HasTooShortIdentifiers
+- binding: "*"
+  inspection: Except:HasWrongCaseIdentifiers
