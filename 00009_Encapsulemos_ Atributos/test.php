@@ -33,3 +33,20 @@ public function testFecha(): void {
   
   $this->assertFalse(array_key_exists("fechaDeEstreno", $props), "La fechaDeEstreno debe ser privada");
 }
+
+public function testDescribirNemo() : void {
+  $this->assertTrue(method_exists('Pelicula','describirse'), "La clase película no tiene un método describirse");
+}
+
+public function testDescribirToy() : void {
+  $this->assertTrue(method_exists('Pelicula','describirse'), "La clase película no tiene un método describirse");
+}
+
+public function testRating1() : void {
+  $this->assertTrue(method_exists('Pelicula','ratingMayorA'), "La clase película no tiene un método ratingMayorA");
+}
+
+public function testRating2() : void {
+  $this->assertTrue(method_exists('Pelicula','ratingMayorA'), "La clase película no tiene un método ratingMayorA");
+}
+
