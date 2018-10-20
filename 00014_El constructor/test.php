@@ -193,3 +193,15 @@ public function testSetRatingMayor() : void {
   
   $this->assertTrue($resul === 10, "El método setRating no hace lo esperado cuando recibe un rating mayor a 10");
 }
+
+public function testConstructor() : void {
+  $miPeli = new Pelicula(1, "Test");
+  
+  $id = $miPeli->getId();
+  
+  $titulo = $miPeli->getTitulo();
+  
+  $this->assertTrue($id === 1, "El constructor no esta asignando el id");
+  
+  $this->assertTrue($titulo === "Test", "El constructor no esta asignando el titulo");
+}
