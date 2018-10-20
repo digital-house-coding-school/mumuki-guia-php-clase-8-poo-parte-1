@@ -1,5 +1,5 @@
 public function testId(): void {
-  $peli = new Pelicula(1, "Test");
+  $peli = new Pelicula();
   $props = get_object_vars($peli);
   
   $this->assertTrue(property_exists('Pelicula', 'id'), "Falta la propiedad id");
@@ -8,7 +8,7 @@ public function testId(): void {
 }
 
 public function testTitulo(): void {
-  $peli = new Pelicula(1, "Test");
+  $peli = new Pelicula();
   $props = get_object_vars($peli);
   
   $this->assertTrue(property_exists('Pelicula', 'titulo'), "Falta la propiedad titulo");
@@ -17,7 +17,7 @@ public function testTitulo(): void {
 }
 
 public function testRating(): void {
-  $peli = new Pelicula(1, "Test");
+  $peli = new Pelicula();
   $props = get_object_vars($peli);
   
   $this->assertTrue(property_exists('Pelicula', 'rating'), "Falta la propiedad rating");
@@ -26,7 +26,7 @@ public function testRating(): void {
 }
 
 public function testFecha(): void {
-  $peli = new Pelicula(1, "Test");
+  $peli = new Pelicula();
   $props = get_object_vars($peli);
   
   $this->assertTrue(property_exists('Pelicula', 'fechaDeEstreno'), "Falta la propiedad fechaDeEstreno");
@@ -37,7 +37,7 @@ public function testFecha(): void {
 public function testDescribirNemo() : void {
   $this->assertTrue(method_exists('Pelicula','describirse'), "La clase película no tiene un método describirse");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setTitulo("Buscando a Nemo");
   $miPeli->setRating(8.7);
   $resul = $miPeli->describirse();
@@ -47,7 +47,7 @@ public function testDescribirNemo() : void {
 public function testDescribirToy() : void {
   $this->assertTrue(method_exists('Pelicula','describirse'), "La clase película no tiene un método describirse");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setTitulo("Toy Story");
   $miPeli->setRating(9.5);
   $resul = $miPeli->describirse();
@@ -57,7 +57,7 @@ public function testDescribirToy() : void {
 public function testRating1() : void {
   $this->assertTrue(method_exists('Pelicula','ratingMayorA'), "La clase película no tiene un método ratingMayorA");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setRating(9.5);
   $resul = $miPeli->ratingMayorA(9.8);
   $this->assertTrue($resul === false, "El método falla con una película con rating 9.5 y consultandole si es mayor a 9.8");
@@ -66,7 +66,7 @@ public function testRating1() : void {
 public function testRating2() : void {
   $this->assertTrue(method_exists('Pelicula','ratingMayorA'), "La clase película no tiene un método ratingMayorA");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setRating(9.5);
   $resul = $miPeli->ratingMayorA(9.0);
   $this->assertTrue($resul === true, "El método falla con una película con rating 9.5 y consultandole si es mayor a 9.0");
@@ -75,7 +75,7 @@ public function testRating2() : void {
 public function testGetId() : void {
   $this->assertTrue(method_exists('Pelicula','getId'), "La clase película no tiene un método getId");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setTitulo("Toy Story 2");
   $miPeli->setRating(7.6);
   $miPeli->setId(10);
@@ -89,7 +89,7 @@ public function testGetId() : void {
 public function testGetTitulo() : void {
   $this->assertTrue(method_exists('Pelicula','getTitulo'), "La clase película no tiene un método getTitulo");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setTitulo("Toy Story 2");
   $miPeli->setRating(7.6);
   $miPeli->setId(10);
@@ -103,7 +103,7 @@ public function testGetTitulo() : void {
 public function testGetRating() : void {
   $this->assertTrue(method_exists('Pelicula','getRating'), "La clase película no tiene un método getRating");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setTitulo("Toy Story 2");
   $miPeli->setRating(7.6);
   $miPeli->setId(10);
@@ -117,7 +117,7 @@ public function testGetRating() : void {
 public function testGetFechaDeEstreno() : void {
   $this->assertTrue(method_exists('Pelicula','getFechaDeEstreno'), "La clase película no tiene un método getFechaDeEstreno");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   $miPeli->setTitulo("Toy Story 2");
   $miPeli->setRating(7.6);
   $miPeli->setId(10);
@@ -131,7 +131,7 @@ public function testGetFechaDeEstreno() : void {
 public function testSetId() : void {
   $this->assertTrue(method_exists('Pelicula','setId'), "La clase película no tiene un método setId");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   
   $miPeli->setId(7);
   $resul = $miPeli->getId();
@@ -142,7 +142,7 @@ public function testSetId() : void {
 public function testSetTitulo() : void {
   $this->assertTrue(method_exists('Pelicula','setTitulo'), "La clase película no tiene un método setTitulo");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   
   $miPeli->setTitulo("Toy Story 2");
   $resul = $miPeli->getTitulo();
@@ -153,7 +153,7 @@ public function testSetTitulo() : void {
 public function testSetRating() : void {
   $this->assertTrue(method_exists('Pelicula','setRating'), "La clase película no tiene un método setRating");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   
   $miPeli->setRating(7.5);
   $resul = $miPeli->getRating();
@@ -164,7 +164,7 @@ public function testSetRating() : void {
 public function testSetFechaDeEstreno() : void {
   $this->assertTrue(method_exists('Pelicula','setFechaDeEstreno'), "La clase película no tiene un método setFechaDeEstreno");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   
   $miPeli->setFechaDeEstreno("2000-10-10");
   $resul = $miPeli->getFechaDeEstreno();
@@ -175,7 +175,7 @@ public function testSetFechaDeEstreno() : void {
 public function testSetRatingMenor() : void {
   $this->assertTrue(method_exists('Pelicula','setRating'), "La clase película no tiene un método setRating");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   
   $miPeli->setRating(-1);
   $resul = $miPeli->getRating();
@@ -186,7 +186,7 @@ public function testSetRatingMenor() : void {
 public function testSetRatingMayor() : void {
   $this->assertTrue(method_exists('Pelicula','setRating'), "La clase película no tiene un método setRating");
   
-  $miPeli = new Pelicula(1, "Test");
+  $miPeli = new Pelicula();
   
   $miPeli->setRating(200);
   $resul = $miPeli->getRating();
