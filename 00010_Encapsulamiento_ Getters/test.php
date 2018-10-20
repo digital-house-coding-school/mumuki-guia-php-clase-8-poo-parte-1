@@ -127,5 +127,5 @@ public function testGetFechaDeEstreno() : void {
   
   $resul = $miPeli->getFechaDeEstreno();
   
-  $this->assertTrue($resul === "2010-10-10", "El método getFechaDeEstreno no retorna la fecha de estreno de la película");
+  $this->assertTrue($resul === "2000-10-10", "El método getFechaDeEstreno no retorna la fecha de estreno de la película");
 }
