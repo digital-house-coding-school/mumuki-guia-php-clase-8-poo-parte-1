@@ -1,6 +1,5 @@
 public function testId(): void {
   $peli = new Pelicula(1, "Test");
-  var_dump($peli);exit;
   $props = get_object_vars($peli);
   
   $this->assertTrue(property_exists('Pelicula', 'id'), "Falta la propiedad id");
@@ -184,16 +183,6 @@ public function testSetRatingMenor() : void {
   $this->assertTrue($resul === 0, "El método setRating no hace lo esperado cuando recibe un rating menor a 0");
 }
 
-public function testSetRatingMayor() : void {
-  $this->assertTrue(method_exists('Pelicula','setRating'), "La clase película no tiene un método setRating");
-  
-  $miPeli = new Pelicula(1, "Test");
-  
-  $miPeli->setRating(200);
-  $resul = $miPeli->getRating();
-  
-  $this->assertTrue($resul === 10, "El método setRating no hace lo esperado cuando recibe un rating mayor a 10");
-}
 
 public function testConstructor() : void {
 
@@ -206,4 +195,15 @@ public function testConstructor() : void {
   $this->assertTrue($id === 1, "El constructor no esta asignando el id");
   
   $this->assertTrue($titulo === "Test", "El constructor no esta asignando el titulo");
+}
+
+public function testSetRatingMayor() : void {
+  $this->assertTrue(method_exists('Pelicula','setRating'), "La clase película no tiene un método setRating");
+  
+  $miPeli = new Pelicula(1, "Test");
+  
+  $miPeli->setRating(200);
+  $resul = $miPeli->getRating();
+  
+  $this->assertTrue($resul === 10, "El método setRating no hace lo esperado cuando recibe un rating mayor a 10");
 }
