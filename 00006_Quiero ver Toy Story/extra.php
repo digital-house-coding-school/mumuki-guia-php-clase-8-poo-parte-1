@@ -3,7 +3,7 @@ class Pelicula {
   public $titulo;
   public $rating;
   public $fechaDeEstreno;
-  public $reproducida;
+  public $reproducida = false;
   
   public function reproducir() {
     $this->reproducida = true;
