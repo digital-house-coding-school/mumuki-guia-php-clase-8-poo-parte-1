@@ -183,7 +183,7 @@ public function testSetRatingMenor() : void {
   $this->assertTrue($resul === 0, "El método setRating no hace lo esperado cuando recibe un rating menor a 0");
 }
 
-public function testSetRating() : void {
+public function testSetRatingMayor() : void {
   $this->assertTrue(method_exists('Pelicula','setRating'), "La clase película no tiene un método setRating");
   
   $miPeli = new Pelicula();
