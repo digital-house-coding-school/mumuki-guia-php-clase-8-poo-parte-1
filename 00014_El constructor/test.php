@@ -1,3 +1,16 @@
+public function testConstructor() : void {
+
+  $miPeli = new Pelicula(1, "Test");
+  var_dump($miPeli);exit;  
+  $id = $miPeli->getId();
+  
+  $titulo = $miPeli->getTitulo();
+  
+  $this->assertTrue($id === 1, "El constructor no esta asignando el id");
+  
+  $this->assertTrue($titulo === "Test", "El constructor no esta asignando el titulo");
+}
+
 public function testId(): void {
   $peli = new Pelicula(1, "Test");
   $props = get_object_vars($peli);
@@ -181,20 +194,6 @@ public function testSetRatingMenor() : void {
   $resul = $miPeli->getRating();
   
   $this->assertTrue($resul === 0, "El método setRating no hace lo esperado cuando recibe un rating menor a 0");
-}
-
-
-public function testConstructor() : void {
-
-  $miPeli = new Pelicula(1, "Test");
-  var_dump($miPeli);exit;  
-  $id = $miPeli->getId();
-  
-  $titulo = $miPeli->getTitulo();
-  
-  $this->assertTrue($id === 1, "El constructor no esta asignando el id");
-  
-  $this->assertTrue($titulo === "Test", "El constructor no esta asignando el titulo");
 }
 
 public function testSetRatingMayor() : void {
