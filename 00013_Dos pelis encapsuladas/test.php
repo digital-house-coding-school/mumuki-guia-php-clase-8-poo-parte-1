@@ -7,7 +7,7 @@ public function testToyStory() : void {
   
   $this->assertTrue($toyStory->getTitulo() == "Toy Story", "El titulo de Toy Story esta incorrecto");
   
-  $this->assertTrue($toyStory->getTituloId() == 1, "El id de Toy Story esta incorrecto");
+  $this->assertTrue($toyStory->getId() == 1, "El id de Toy Story esta incorrecto");
   
   $this->assertTrue($toyStory->getRating() == 9.5, "El rating de Toy Story esta incorrecto");
 }
