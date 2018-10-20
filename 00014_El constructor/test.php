@@ -195,8 +195,9 @@ public function testSetRatingMayor() : void {
 }
 
 public function testConstructor() : void {
+
   $miPeli = new Pelicula(1, "Test");
-  
+  var_dump($miPeli);exit;  
   $id = $miPeli->getId();
   
   $titulo = $miPeli->getTitulo();
