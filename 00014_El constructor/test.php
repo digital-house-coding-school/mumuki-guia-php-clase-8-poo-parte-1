@@ -1,6 +1,6 @@
 public function testId(): void {
   $peli = new Pelicula(1, "Test");
-  var_dump($peli);
+  var_dump($peli);exit;
   $props = get_object_vars($peli);
   
   $this->assertTrue(property_exists('Pelicula', 'id'), "Falta la propiedad id");
