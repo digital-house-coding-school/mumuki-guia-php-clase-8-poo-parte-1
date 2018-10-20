@@ -19,10 +19,10 @@ public function testBuscandoANemo() : void {
 }
 
 public function testReproduccion() : void {
-  global $repToy;
-  global $repNemo;
-
-  $this->assertTrue($repToy, "Parecería que no se reprodujo Toy Story...");
+  global $toyStory;
+  global $buscandoANemo;
   
-  $this->assertTrue($repNemo, "Ey! No quería ver Buscando a Nemo!");
+  $this->assertTrue($toyStory->reproducida, "No reprodujiste Toy Story!");
+  
+  $this->assertFalse($buscandoANemo->reproducida, "Ey...no quería ver Buscando a Nemo");
 }
