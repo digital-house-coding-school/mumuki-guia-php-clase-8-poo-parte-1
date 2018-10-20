@@ -126,6 +126,6 @@ public function testGetFechaDeEstreno() : void {
   $miPeli->fechaDeEstreno = "2000-10-10";
   
   $resul = $miPeli->getFechaDeEstreno();
-  var_dump($resul);exit;
+  
   $this->assertTrue($resul === "2010-10-10", "El método getFechaDeEstreno no retorna la fecha de estreno de la película");
 }
